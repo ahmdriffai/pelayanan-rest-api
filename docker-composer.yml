@@ -1,0 +1,12 @@
+version: "3.5"
+
+services:
+  sistem-pelayanan-postgresql:
+    container_name: "sistem-pelayanan-postgresql"
+    image: "postgres:latest"
+    ports:
+      - 5432:5432
+    environment:
+      POSTGRES_USER: "user_pelayanan"
+      POSTGRES_PASSWORD: "rahasia"
+      POSTGRES_DB: "db_pelayanan"
